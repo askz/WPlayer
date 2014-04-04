@@ -1,0 +1,39 @@
+<div>
+	<input type=button name='play' value="play" onClick="play()" />
+	<input type=button name='pause' value="pause" onClick="pause()" />
+	<input type=button name='mute' value="mute" onClick="mute()" />
+</div>
+<script>
+	soundManager.setup(
+		{
+			url : './flash_dependeces/soundmanager2_debug.swf',
+			flashVersion: 8,
+			preferFlash: false,
+			onready: function()
+			{
+				var curMusic = soundManager.createSound({
+					id: 'test',
+			 		url: './test.mp3'
+			 	});
+			},
+			ontimeout: function()
+			{
+				alert("Time out !");
+			}
+		});
+
+		function play()
+		{
+			soundManager.play('test');
+		}
+
+		function pause()
+		{
+			soundManager.pause('test');
+		}
+
+		function mute()
+		{
+			soundManager.toggleMute('test');
+		}
+</script>
