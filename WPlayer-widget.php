@@ -114,7 +114,7 @@ class WPlayer extends WP_Widget
       echo $before_title . $title . $after_title;;
  	
  	//WIDGET CODE :)
-    include plugin_dir_path( __FILE__ ) . "/WPlayer/player.html";
+    include plugin_dir_path( __FILE__ ) . "html/player.html";
  
     echo $after_widget;
 

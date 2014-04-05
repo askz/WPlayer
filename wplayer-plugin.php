@@ -9,15 +9,16 @@ Author URI: http://URI_Of_The_Plugin_Author
 License: A "Slug" license name e.g. GPL2
 */
 
-require_once plugin_dir_path( __FILE__ ) . "/WPlayer.class.php";
+require_once plugin_dir_path( __FILE__ ) . "class/WPlayer.class.php";
 
+require_once plugin_dir_path( __FILE__ ) . "WPlayer-widget.php";
 
 $tools = new WPlayer_Plugin();
 
-require_once plugin_dir_path( __FILE__ ) . "/WPlayer-widget.php";
 
 
-
+// Hook into the 'admin_print_footer_scripts' action
+add_action( 'admin_print_footer_scripts', 'embed_player_quicktag' );
 
 
 ?>
