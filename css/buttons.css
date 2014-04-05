@@ -1,0 +1,145 @@
+input[id="play"] { 
+ background: url("../img/buttons/play.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+}
+
+input[id="pause"] { 
+ background: url("../img/buttons/pause.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+}
+
+input[id="next"] { 
+ background: url("../img/buttons/forward.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+}
+
+input[id="prev"]{ 
+ background: url("../img/buttons/backward.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+}
+input[id="play_select"] { 
+ background: url("../img/buttons/play_select.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+}
+
+input[id="pause_select"] { 
+ background: url("../img/buttons/pause_select.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+}
+
+input[id="next_select"] { 
+ background: url("../img/buttons/forward_select.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+}
+
+input[id="prev_select"]{ 
+ background: url("../img/buttons/backward_select.png") no-repeat;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+}
+
+input[id="mute"]{ 
+ background: url("../img/buttons/Sound_level_0.png") no-repeat;
+ background-color: #252527;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+
+}
+input[id="mute_select"] { 
+ background: url("../img/buttons/Sound_mute.png") no-repeat;
+ background-color: #252527;
+ opacity: 1;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ cursor: hand;
+ border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+-webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 255, 0.76);
+}

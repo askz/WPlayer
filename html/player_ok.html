@@ -1,0 +1,123 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>bwoua!</title>
+	<script type="text/javascript" src="./soundmanager2.js"></script>
+	<script type="text/javascript" src="id3.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/buttons.css">
+</head>
+<body>
+	<form name="getPlaylist" method="post" action="bot.php">
+	</form>
+	<div name="playlist" id="playlist">
+		<input type=button name='play' id='play' onClick="play(this.id)" />
+		<input type=button name='pause' id='pause' onClick="pause(this.id)" />
+		<input type=button name='prev' id='prev' onClick="prev()" onmousedown="change_img(this.id)" onmouseup="change_img(this.id)" />
+		<input type=button name='next' id='next' onClick="next()" onmousedown="change_img(this.id)" onmouseup="change_img(this.id)" />
+		<input type=button name='mute' id='mute'  onClick="mute(this.id)" />
+	
+	</div>
+
+	<script type="text/javascript">
+
+		function getPlayList()
+		{
+			document.getPlayList.submit();
+		}
+		function setPlayList()
+		{
+			/* TODO
+			var music = new Array('id','path','title','artist','album','length','year','genre');
+			*/
+			for (var i = 0; i < list.length; i++) {
+				soundManager.createSound({
+					id: i.toString(),
+					url: list[i]
+				})
+			};
+		}
+
+		function next()
+		{
+			soundManager.stop(curMusic.toString());
+			
+			if (curMusic < list.length-1) {
+				curMusic++;
+			} 
+			else{
+				curMusic = 0;
+			};
+			
+			soundManager.play(curMusic.toString());
+		}
+
+		function prev()
+		{
+			soundManager.stop(curMusic.toString());
+			
+
+			if (curMusic == 0) {
+				curMusic = list.length-1;
+			} 
+			else{
+				curMusic--;
+			};
+			
+			soundManager.play(curMusic.toString());
+
+		}
+
+		var list = ['./test1.mp3','./test2.mp3','./test3.mp3'];
+		curMusic = 0;
+
+		soundManager.setup(
+		{
+			url : './flash_dependeces/soundmanager2_debug.swf',
+			flashVersion: 8,
+			preferFlash: false,
+			onready: function()
+			{
+				var playList = setPlayList(list);
+			},
+			ontimeout: function()
+			{
+				alert("Time out !");
+			}
+		});
+
+		function change_img(id)
+		{
+			var img = document.getElementById(id);
+
+
+			if (id.search("_select") >= 4) {
+				id = id.replace("_select", "");
+				img.setAttribute('id', id);
+
+			} else{
+				img.setAttribute('id', id + "_select");
+			};
+		}
+
+		function play(id)
+		{
+			soundManager.play(curMusic.toString());
+			change_img(id);
+		}
+
+		function pause(id)
+		{
+			soundManager.pause(curMusic.toString());
+			change_img(id);
+		}
+
+		function mute(id)
+		{
+			soundManager.toggleMute(curMusic.toString());
+			change_img(id);
+		}
+
+
+	</script>
+</body>
+</html>
