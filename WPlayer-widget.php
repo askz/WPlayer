@@ -44,9 +44,10 @@ class WPlayer extends WP_Widget
     $playlist 	= $instance['playlist'];
     $ap 		= $instance['autoplay'];
     $volume 	= $instance['volume'];
-    $upload_dir = wp_upload_dir();
-    $upload_dir['baseurl'] = $upload_baseurl;
-  	$songs 		= $this->WPlayer->tools->search_music_in($upload_baseurl);
+
+    $upload_dir 	= wp_upload_dir();
+    $upload_baseurl = $upload_dir['baseurl'];
+  	$songs 			= $this->WPlayer->tools->search_music_in($upload_baseurl);
 
 
 	?>
